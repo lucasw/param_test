@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="test" default="'235'" />
+  <param name="foo" value="'4331'" />
+  <param name="bar" value="$(arg test)" />
+  <!--node name="get" pkg="rosparam" type="rosparam" args="get foo" output="screen" /-->
+</launch>

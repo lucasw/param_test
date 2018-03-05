@@ -1,0 +1,3 @@
+bar: "'2435'"
+# This doesn't get converted into an int, the quotes are enough
+foo: "4225"
