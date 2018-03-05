@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="ns_test"
+    pkg="param_test"
+    type="param_test"
+    output="screen"
+    ns="/foo/"/>
+  <node name="ns_test2"
+    pkg="param_test"
+    type="param_test"
+    output="screen"
+    ns="foo"/>
+
+</launch>

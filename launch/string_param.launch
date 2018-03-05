@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="val" default="'1329'" />
+
+  <node name="string_param_test" pkg="param_test" type="string_param_test"
+     output="screen" >
+    <param name="str_param" value="$(arg val)" type="str" />
+  </node>
+
+  <node name="string_param_test2" pkg="param_test" type="string_param_test.py"
+     output="screen" >
+    <param name="str_param" value="$(arg val)" type="str" />
+  </node>
+
+</launch>
